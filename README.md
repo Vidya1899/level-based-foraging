@@ -1,7 +1,6 @@
 # Level-Based Foraging Environment
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org)
 * [rllib](https://github.com/ray-project/ray/tree/master/rllib)
 * [OpenAI's Gym](https://gym.openai.com/)
