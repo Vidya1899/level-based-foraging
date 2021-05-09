@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="lbforaging",
+    name="level-based-foraging",
     version="1.0.15",
     description="Level Based Foraging Environment",
-    author="Filippos Christianos",
-    url="https://github.com/semitable/lb-foraging",
+    author="",
+    url="https://github.com/Vidya1899/level-based-foraging",
     packages=find_packages(exclude=["contrib", "docs", "tests"]),
     classifiers=[
         "Intended Audience :: Developers",
