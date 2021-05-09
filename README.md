@@ -1,5 +1,4 @@
 # Level-Based Foraging Environment
-## A multi-agent environment for Reinforcement Learning
 
 
 <!-- TABLE OF CONTENTS -->
@@ -33,9 +32,9 @@ This is a Python simulator for level based foraging. It is based on OpenAI's RL 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org)
+* [rllib](https://github.com/ray-project/ray/tree/master/rllib)
 * [OpenAI's Gym](https://gym.openai.com/)
 * [pyglet](https://github.com/pyglet/pyglet)
-
 
 
 <!-- GETTING STARTED -->
@@ -47,34 +46,13 @@ Install using pip
 ```sh
 pip install lbforaging
 ```
-Or to ensure that you have the latest version:
-```sh
-git clone https://github.com/semitable/lb-foraging.git
-cd lb-foraging
-pip install -e .
-```
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Create environments with the gym framework.
-First import
-```python
-import lbforaging
-```
+Create environments with the rllib framework.
 
-Then create an environment:
-```python
-env = gym.make("Foraging-8x8-2p-1f-v0")
-```
-
-We offer a variety of environments using this template:
-```
-"Foraging-{GRID_SIZE}x{GRID_SIZE}-{PLAYER COUNT}p-{FOOD LOCATIONS}f{-coop IF COOPERATIVE MODE}-v0"
-```
-
-But you can register your own variation using (change parameters as needed):
+Register your own variation using (change parameters as needed):
 ```python
 from gym.envs.registration register
 
@@ -134,23 +112,4 @@ class Action(Enum):
 }
 ```
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-<!-- CONTACT -->
-## Contact
-
-Filippos Christianos - f.christianos@ed.ac.uk
-
-Project Link: [https://github.com/semitable/lb-foraging](https://github.com/semitable/lb-foraging)
 
